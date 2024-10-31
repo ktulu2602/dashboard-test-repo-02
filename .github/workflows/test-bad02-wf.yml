@@ -1,14 +1,14 @@
 name: test-bad02-wf
 
 on:
-    workflow_dispatch:
-  
-  jobs:
-    say-hello-and-fail:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Print Hello World
-          run: echo "Hello, World!"
-  
-        - name: Fail the Workflow
-          run: exit 1
+  workflow_dispatch:
+
+jobs:
+  say-hello-and-fail:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello World
+        run: echo "Hello, World!"
+
+      - name: Fail the Workflow
+        run: exit 1
