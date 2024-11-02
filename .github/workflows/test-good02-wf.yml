@@ -4,8 +4,13 @@ on:
   workflow_dispatch:
 
 jobs:
-  say-hello-and-fail:
+  say-hello-and-pass:
     runs-on: ubuntu-latest
     steps:
       - name: Print Hello World
         run: echo "Hello, World!"
+  say-hello-again:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello World Again
+        run: echo "Hello, World...Again!"
